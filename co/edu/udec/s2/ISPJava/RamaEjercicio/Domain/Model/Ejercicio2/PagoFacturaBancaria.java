@@ -14,7 +14,7 @@ public class PagoFacturaBancaria implements PagoFactura {
     public void pagarFactura(double cantidad, String factura) {
         if (cantidad <= cuenta.saldo) {
             cuenta.saldo -= cantidad;
-            System.out.println("Procesando pago de la factura " + factura + "con valor de $" + cantidad + "...");
+            System.out.println("Procesando pago de la factura " + factura + " con valor de $" + cantidad + "...");
             System.out.println("Factura cancelada con exito!");
             System.out.println("Saldo Actual: $" + cuenta.saldo);
         }
